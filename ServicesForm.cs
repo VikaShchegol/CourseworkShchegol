@@ -90,6 +90,7 @@ namespace course
             {
                 Text = "Записатися",
                 Location = new Point(10, lblPrice.Bottom + 10),
+                Font = new Font("Arial", 12, FontStyle.Italic),
                 AutoSize = true,
                 Tag = row["ID_service"]
             };
