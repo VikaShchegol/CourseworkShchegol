@@ -84,9 +84,7 @@
             this.comboBoxRole.FormattingEnabled = true;
             this.comboBoxRole.Items.AddRange(new object[] {
             "Клієнт",
-            "Співробітник",
-            "Лікар",
-            "Тренер"});
+            "Співробітник",});
             this.comboBoxRole.Location = new System.Drawing.Point(213, 262);
             this.comboBoxRole.Name = "comboBoxRole";
             this.comboBoxRole.Size = new System.Drawing.Size(121, 26);
