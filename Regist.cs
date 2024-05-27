@@ -42,12 +42,6 @@ namespace course
                         case "Співробітник":
                             sql = "INSERT INTO Employees (Ім_я, Прізвище, Електронна_пошта, Пароль) VALUES (@firstName, @lastName, @Email, @Password)";
                             break;
-                        case "Тренер":
-                            sql = "INSERT INTO Coaches (Ім_я, Прізвище, Електронна_пошта, Пароль) VALUES (@firstName, @lastName, @Email, @Password)";
-                            break;
-                        case "Лікар":
-                            sql = "INSERT INTO Doctors (Ім_я, Прізвище, Електронна_пошта, Пароль) VALUES (@firstName, @lastName, @Email, @Password)";
-                            break;
                         default:
                             MessageBox.Show("Виберіть правильну роль.");
                             return;
