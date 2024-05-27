@@ -41,14 +41,6 @@ namespace course
                     sql = "SELECT ID_employee FROM Employees WHERE Електронна_пошта = @Email AND Пароль = @Password";
                     idColumn = "ID_employee";
                     break;
-                case "Тренер":
-                    sql = "SELECT ID_coach FROM Coaches WHERE Електронна_пошта = @Email AND Пароль = @Password";
-                    idColumn = "ID_coach";
-                    break;
-                case "Лікар":
-                    sql = "SELECT ID_doctor FROM Doctors WHERE Електронна_пошта = @Email AND Пароль = @Password";
-                    idColumn = "ID_doctor";
-                    break;
                 default:
                     MessageBox.Show("Виберіть правильну роль.");
                     return;
