@@ -42,9 +42,9 @@
             // 
             this.buttonLogin.BackColor = System.Drawing.Color.Ivory;
             this.buttonLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.buttonLogin.Location = new System.Drawing.Point(238, 252);
+            this.buttonLogin.Location = new System.Drawing.Point(121, 253);
             this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(123, 40);
+            this.buttonLogin.Size = new System.Drawing.Size(172, 40);
             this.buttonLogin.TabIndex = 0;
             this.buttonLogin.Text = "Увійти";
             this.buttonLogin.UseVisualStyleBackColor = false;
