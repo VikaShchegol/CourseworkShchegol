@@ -172,7 +172,7 @@ namespace course
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip2);
             this.Name = "MainForm";
-            this.Text = "MainForm";
+            this.Text = "Курорт \"Карпати\"";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
