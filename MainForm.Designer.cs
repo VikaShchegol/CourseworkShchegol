@@ -1,5 +1,3 @@
-using System.Drawing;
-
 namespace course
 {
     partial class MainForm
