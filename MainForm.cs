@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data.Common;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
@@ -17,43 +17,6 @@ namespace course
             InitializeComponent();
             conn = DBUtils.GetDBConnection();
         }
-
-       
-
-        private void buttonLogin_Click(object sender, EventArgs e)
-        {
-            using (LoginForm loginForm = new LoginForm(conn))
-            {
-                if (loginForm.ShowDialog() == DialogResult.OK)
-                {
-                    isLoggedIn = true;
-                    userId = loginForm.UserId;
-                    userRole = loginForm.UserRole;
-
-                    MessageBox.Show($"Вхід виконано. ID користувача: {userId}, роль: {userRole}");
-
-                   
-                    switch (userRole)
-                    {
-                        case "Співробітник":
-                        case "Адмін":
-                            EmployeeForm employeeForm = new EmployeeForm(userId, userRole);
-                            employeeForm.Show();
-                            break;
-                        default:
-                            break;
-                    }
-                }
-            }
-        }
-
-        private void buttonRegist_Click(object sender, EventArgs e)
-        {
-            RegistrationForm registrationForm = new RegistrationForm();
-            registrationForm.Show();
-        }
-        
-
         private void buttonVouchers_Click(object sender, EventArgs e)
         {
                 VouchersForm vouchersForm = new VouchersForm(conn, false);
@@ -73,6 +36,40 @@ namespace course
             ScheduleForm scheduleForm = new ScheduleForm(conn);
             scheduleForm.Show();
             this.Hide();
+        }
+
+        private void вхідToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            using (LoginForm loginForm = new LoginForm(conn))
+            {
+                if (loginForm.ShowDialog() == DialogResult.OK)
+                {
+                    isLoggedIn = true;
+                    userId = loginForm.UserId;
+                    userRole = loginForm.UserRole;
+
+                    MessageBox.Show($"Вхід виконано. ID користувача: {userId}, роль: {userRole}");
+
+
+                    switch (userRole)
+                    {
+                        case "Співробітник":
+                        case "Адмін":
+                            EmployeeForm employeeForm = new EmployeeForm(userId, userRole);
+                            employeeForm.Show();
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+        }
+
+        private void реєстраціяToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistrationForm registrationForm = new RegistrationForm();
+            registrationForm.Show();
         }
     }
 }
