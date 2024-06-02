@@ -91,5 +91,11 @@ namespace course
             }
 
         }
+        
+        private void переглядToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ClientsForm clientsForm = new ClientsForm(conn);
+            clientsForm.Show();
+        }
     }
 }
