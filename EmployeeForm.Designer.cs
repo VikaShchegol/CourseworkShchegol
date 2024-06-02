@@ -1,4 +1,4 @@
-﻿namespace course
+namespace course
 {
     partial class EmployeeForm
     {
@@ -44,6 +44,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.даніПроКлієнтівToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.переглядToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -51,7 +55,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(50, 27);
+            this.label1.Location = new System.Drawing.Point(56, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(220, 22);
             this.label1.TabIndex = 0;
@@ -62,7 +66,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(401, 27);
+            this.label2.Location = new System.Drawing.Point(402, 38);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(215, 22);
             this.label2.TabIndex = 1;
@@ -200,6 +204,35 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "Ціна путівки";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Ivory;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.даніПроКлієнтівToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(680, 29);
+            this.menuStrip1.TabIndex = 16;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // даніПроКлієнтівToolStripMenuItem
+            // 
+            this.даніПроКлієнтівToolStripMenuItem.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.даніПроКлієнтівToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.переглядToolStripMenuItem});
+            this.даніПроКлієнтівToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.даніПроКлієнтівToolStripMenuItem.Name = "даніПроКлієнтівToolStripMenuItem";
+            this.даніПроКлієнтівToolStripMenuItem.Size = new System.Drawing.Size(148, 25);
+            this.даніПроКлієнтівToolStripMenuItem.Text = "Дані про клієнтів ";
+            // 
+            // переглядToolStripMenuItem
+            // 
+            this.переглядToolStripMenuItem.BackColor = System.Drawing.Color.LemonChiffon;
+            this.переглядToolStripMenuItem.Name = "переглядToolStripMenuItem";
+            this.переглядToolStripMenuItem.Size = new System.Drawing.Size(147, 26);
+            this.переглядToolStripMenuItem.Text = "Перегляд";
+            this.переглядToolStripMenuItem.Click += new System.EventHandler(this.переглядToolStripMenuItem_Click);
+            // 
             // EmployeeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -222,8 +255,12 @@
             this.Controls.Add(this.textBoxServiceName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "EmployeeForm";
-            this.Text = "Employee";
+            this.Text = "Адміністратор";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -247,5 +284,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem даніПроКлієнтівToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem переглядToolStripMenuItem;
     }
 }
